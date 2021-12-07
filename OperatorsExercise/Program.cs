@@ -28,9 +28,8 @@ namespace OperatorsExercise
         public static void PrintAreaOfCircle()
         {            
             Console.WriteLine("What is the radius of your circle?");
-            var radius = double.Parse(Console.ReadLine());
-            var area = Math.PI * Math.Pow(radius, 2);
-            Console.WriteLine($"The area of your circle is {area}.");
+            var radius = double.Parse(Console.ReadLine());            
+            Console.WriteLine($"The area of your circle is {AreaOfCircle(radius)}.");
         }
 
         public static double AreaOfCircle(double radius)
